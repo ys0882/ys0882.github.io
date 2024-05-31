@@ -6,7 +6,7 @@
     <title>자기소개 웹페이지</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial Rounded MT Bold', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -24,14 +24,26 @@
             max-width: 800px;
             margin: auto;
             padding: 20px;
+            padding-bottom: 60px; /* 푸터의 높이만큼 여백 추가 */
+            margin-left: 20px; /* 왼쪽 여백 추가 */
+            margin-right: 20px; /* 오른쪽 여백 추가 */
+        }
+        .section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
         footer {
             background-color: #333;
             color: #fff;
             padding: 10px 0;
-            position: fixed;
             width: 100%;
+            position: fixed; /* 페이지 하단에 고정 */
             bottom: 0;
+            left: 0;
         }
     </style>
 </head>
@@ -40,16 +52,26 @@
         <h1>안녕하세요, 저는 강예솔입니다.</h1>
     </header>
     <div class="container">
-        <h2>자기소개</h2>
-        <p>안녕하세요, 저는 강예솔입니다. 동양미래대학교 컴퓨터소프트웨어학과에 2024년에 입학했습니다. 현재는 HTML, CSS 등을 사용하여 웹페이지를 개발하고 있으며, 다양한 기술들에도 관심을 가지고 있습니다.</p>
-        <h2>연락처</h2>
-        <p>이메일: ys0882@dongyang.ac.kr</p>
-        <h2>기술</h2>
-        <p>HTML, CSS, Python, JAVA, Github, Gitbash, Slack, Notion, Google 협업도구 등</p>
-        <h2>기술개발 경험</h2>
-        <p>HTML, CSS 등을 사용하여 웹페이지 개발 중</p>
-        <h2>관심 기술분야</h2>
-        <p>다양한 여러 기술들 습득 예정</p>
+        <div class="section">
+            <h2>자기소개</h2>
+            <p>안녕하세요, 저는 강예솔(Kang Ye Sol) 입니다. 동양미래대학교 컴퓨터소프트웨어학과에 2024년에 입학했습니다. 현재는 HTML, CSS 등을 사용하여 웹페이지를 개발하고 있으며, 다양한 기술들에도 관심을 가지고 있습니다.</p>
+        </div>
+        <div class="section">
+            <h2>연락처</h2>
+            <p>이메일: ys0882@dongyang.ac.kr</p>
+        </div>
+        <div class="section">
+            <h2>기술</h2>
+            <p>HTML, CSS, Python, JAVA, Github, Gitbash, Slack, Notion, Google 협업도구 등</p>
+        </div>
+        <div class="section">
+            <h2>기술개발 경험</h2>
+            <p>HTML, CSS 등을 사용하여 웹페이지 개발 중</p>
+        </div>
+        <div class="section">
+            <h2>관심 기술분야</h2>
+            <p>다양한 여러 기술들 습득 예정</p>
+        </div>
     </div>
     <footer>
         <p>&copy; 2024 강예솔</p>
